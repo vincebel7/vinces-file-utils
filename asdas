@@ -1,0 +1,7 @@
+usage: vfu rename <target> <pattern>
+pattern syntax:
+\& to indicate existing filename including extension,
+\@ for existing filename, excluding extension,
+\$ for extension
+example: vfu rename myfile.py \@.backup ====> myfile.py.backup
+example: vfu rename * \&-revised\$ ====> myfile-revised.py, myfile-revised.sh
